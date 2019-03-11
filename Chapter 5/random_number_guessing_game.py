@@ -2,11 +2,11 @@
 
 
 import random
+import sys
 
 
 def game(num):
     count = 1
-    print(num)
     while True:
         guess = guess_number()
         if num > guess:
@@ -18,7 +18,11 @@ def game(num):
         else:
             print('Congratulations, you won!!!')
             print('Total number of chances taken:', count)
-            return True
+            user_inp = input('Do you want to play again:(press Y for yes) ')
+            if user_inp == 'Y' or user_inp == 'y':
+                main()
+            else:
+                sys.exit('Game Over!!!')
 
 
 def generate_number():
