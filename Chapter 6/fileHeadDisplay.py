@@ -7,6 +7,7 @@ def main():
     for num in range(5):
         read = file.readline()
         print(read.strip('\n'))
+    file.close()
 
 
 main()
