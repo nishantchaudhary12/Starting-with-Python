@@ -10,6 +10,7 @@ def data():
         if item == '':
             break
         population.append(int(item))
+    file.close()
     return population
 
 
