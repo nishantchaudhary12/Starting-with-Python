@@ -25,6 +25,6 @@ def main():
     print('The wrong answers were:')
     for index in incorrect:
         print(index + 1)
-
+    file.close()
 
 main()
