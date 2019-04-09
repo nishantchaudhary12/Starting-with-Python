@@ -7,7 +7,6 @@ def capitalize(user_input):
     i = 0
     #for i in range(len(user_input)):
     while i < len(user_input):
-        print(user_input[i])
         while user_input[i] == ' ':
             new_string.append(user_input[i])
             i += 1
@@ -20,7 +19,6 @@ def capitalize(user_input):
             new_string.append('.')
             flag = 1
         i += 1
-    print(new_string)
     print(''.join(new_string))
 
 
