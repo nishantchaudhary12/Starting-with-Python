@@ -5,6 +5,7 @@ import pickle
 
 
 def menu():
+    print('\n')
     print('SELECT YOUR CHOICE')
     print('1. List of vegetables and their prices.')
     print('2. Add a new vegetable and price.')
@@ -45,12 +46,14 @@ def view_veg(veg_dict):
     print(veg_dict)
 
 
-
 def change(veg_dict):
     user_input = input("Enter the name of the vegetable: ")
-    price = input('Enter the new price: ')
-    veg_dict[user_input] = price
-    pickle_data(veg_dict)
+    if user_input in veg_dict:
+        price = input('Enter the new price: ')
+        veg_dict[user_input] = price
+        pickle_data(veg_dict)
+    else:
+        print('No record exists.')
 
 
 def delete_veg(veg_dict):
