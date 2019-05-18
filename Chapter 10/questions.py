@@ -13,19 +13,19 @@ class Questions:
     def set_ques(self, ques):
         self.__ques = ques
 
-    def set_ans1(selfself, options):
+    def set_ans1(self, options):
         self._ans1 = options[0]
 
-    def set_ans2(selfself, options):
+    def set_ans2(self, options):
         self._ans2 = options[1]
 
-    def set_ans3(selfself, options):
+    def set_ans3(self, options):
         self._ans3 = options[2]
 
-    def set_ans4(selfself, options):
+    def set_ans4(self, options):
         self._ans4 = options[3]
 
-    def set_correct(selfself, correct):
+    def set_correct(self, correct):
         self._correct = correct
 
     def get_ques(self):
